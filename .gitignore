@@ -1,10 +1,23 @@
-# Ignore compiled output files
+# Ignore all compiled output files
 a.out
 *.out
+*.exe
 
-# Ignore Linux binaries (no extension)
-lecture2/array
-lecture2/sum
-lecture2/vla
-lecture3+4/conditionaloperator
-labs/q2
+# Ignore all binaries with no extension (Linux)
+*
+
+# But DO NOT ignore these (important!)
+!*.c
+!*.h
+!*.md
+!*.txt
+!Makefile
+!.gitignore
+!*/
+
+# Ignore object files
+*.o
+
+# Ignore debug files
+*.gdb
+
